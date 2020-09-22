@@ -17,6 +17,9 @@
  * bytes, one block per pilot. Each block contains 11 messages of 80
  * characters/bytes each. Shorter messages are padded to 80 characters with
  * zeroed bytes.
+ *
+ * NOTE: Can use hexdump to read COMM files with:
+ *       hexdump -e '80 "%1_p" "\n"' COMMUNIC.DAT
  */
 char ***
 load_comm_data(char * comm_filename) {
